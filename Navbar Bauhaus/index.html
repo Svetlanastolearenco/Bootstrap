@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Navbar Bauhaus</title>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            position: relative;
+        }
+        .navbar div.navbar-brand{
+            width: 1.2em;
+            height: 1.2em;
+        }
+        .navbar div.navbar-brand::before{
+            content: "I";
+            display: block;
+            color: #343a40;
+            width: 5px;
+            height: 7px;
+            transform: rotate(45deg) translateX(0em) translateY(-0.3em);
+        }
+        .navbar .navbar-nav{
+            font-size: 0.9em;
+        }
+        .navbar .navbar-toggler-icon{
+            z-index: +1;
+            position: fixed;
+            right: 61.5px;
+            top: 20px;
+        }
+        .navbar .fixed-right .collapse{
+            position: absolute;
+            width: 37%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        /*.navbar .fixed-right .collapse.collapsing{
+           display: none;
+        }*/
+        .navbar .fixed-right .collapse ul:nth-child(1){
+            font-size: 0.75em;
+        }
+        .navbar .fixed-right .collapse ul:nth-child(2){
+            font-size: 1.5em;
+        }
+        .navbar .fixed-right .collapse ul:nth-child(3){
+            font-size: 0.8em;
+        }
+        .navbar .fixed-right .collapse ul:nth-child(3) li:hover i{
+            color: yellowgreen;
+        }
+        @media (max-width: 760px){
+            .navbar .fixed-right .collapse{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-brand border border-white"></div>
+            <a class="navbar-brand mr-auto" href="">bauhaus</a>
+
+            <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ml-auto mr-5">
+                      <li class="nav-item ml-5 pl-5"><a class="nav-link" href="">call us: +123123123</a></li>
+                      <li class="nav-item ml-5 mr-2 pl-5 border-secondary border-left"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a></li>
+                      <li class="nav-item mr-2"><a class="nav-link" href=""><i class="fab fa-facebook-f"></i> </a></li>
+                      <li class="nav-item mr-2"><a class="nav-link" href=""><i class="fab fa-google-plus-g"></i></a></li>
+                      <li class="nav-item mr-2"><a class="nav-link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="nav-item mr-2"><a class="nav-link" href=""><i class="fab fa-dribbble"></i></a></li>
+                  </ul>
+             </div>
+            <button class="navbar-toggler-icon ml-auto"type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="fixed-right">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                <ul class="navbar-nav pl-3 flex-row ml-5 ml-md-0">
+                    <li class="nav-item my-5 mr-4 mr-md-2"><a class="nav-link text-success" href="">ENG</a></li>
+                    <li class="nav-item my-5 mr-4 mr-md-2"><a class="nav-link text-success" href="">FRA</a></li>
+                    <li class="nav-item my-5 mr-4 mr-md-2"><a class="nav-link text-success" href="">GER</a></li>
+                </ul>
+                <ul class="navbar-nav flex-column mb-5 pl-3 ml-5 ml-md-0">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Post detail</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Pages</a></li>
+                </ul>
+                <ul class="navbar-nav pl-3 mt-5 flex-row ml-5 ml-md-0 pb-5">
+                    <li class="nav-item mr-4 mr-md-2"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item mr-4 mr-md-2"><a class="nav-link" href=""><i class="fab fa-facebook-f"></i> </a></li>
+                    <li class="nav-item mr-4 mr-md-2"><a class="nav-link" href=""><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="nav-item mr-4 mr-md-2"><a class="nav-link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-item mr-4 mr-md-2"><a class="nav-link" href=""><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+           </div>
+           </div>
+        </div>
+
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
