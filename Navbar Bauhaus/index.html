@@ -33,16 +33,16 @@
             right: 61.5px;
             top: 20px;
         }
-        .navbar .fixed-right .collapse{
-            position: absolute;
+        .navbar .fixed-right{
+            position: fixed;
             width: 37%;
             right: 0;
             top: 0;
             bottom: 0;
         }
-        /*.navbar .fixed-right .collapse.collapsing{
+        .navbar .fixed-right .collapse.collapsing{
            display: none;
-        }*/
+        }
         .navbar .fixed-right .collapse ul:nth-child(1){
             font-size: 0.75em;
         }
@@ -56,7 +56,7 @@
             color: yellowgreen;
         }
         @media (max-width: 760px){
-            .navbar .fixed-right .collapse{
+            .navbar .fixed-right{
             width: 100%;
         }
         }
